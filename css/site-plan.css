@@ -10,7 +10,7 @@
 }
 
 html {
-    background-color: white;
+    background-color: var(--accent2-color);
 }
 
 body {
@@ -31,7 +31,7 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
-    color: var(--accent2-color);
+    color: var(--secondary-color);
 }
 
 header {
