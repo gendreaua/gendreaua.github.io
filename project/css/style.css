@@ -64,7 +64,7 @@ footer {
 }
 
 .contact {
-    margin-left: 15%;
+    margin-left: 0%;
 }
 
 .social {
@@ -76,6 +76,19 @@ footer {
     float: center;
     margin-right: 12px;
     border-radius: .5rem;
+}
+
+.icon {
+    padding-left: 0;
+    display: inline-block;
+}
+
+.indentS {
+    padding-left: 10px;
+}
+
+.indent {
+    padding-left: 30px;
 }
 
 .copyright {
