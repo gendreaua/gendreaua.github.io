@@ -14,7 +14,31 @@ footer {
 header {
     background-color: #dbc2cf;
     color: #885a89;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 1.3rem;
 }
+
+header img {
+    width: 100px;
+    height: auto;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #885a89;
+    text-decoration: none;
+    font-size: 1.09rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    padding: .65rem;
+}
+
 main section p {
     margin: 5px;
     border: 1px solid #885a89;
@@ -32,4 +56,28 @@ main section h2 {
 nav li {
     color: #546a76;
     
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact {
+    margin-left: 15%;
+}
+
+.social {
+    text-align: right;
+}
+.social img {
+    width: 35px;
+    height: auto;
+    float: center;
+    margin-right: 12px;
+    border-radius: .5rem;
+}
+
+.copyright {
+    grid-template-columns: none;
 }
