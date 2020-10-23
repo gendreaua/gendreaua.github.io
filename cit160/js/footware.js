@@ -3,7 +3,7 @@ function footware() {
     let weather = document.getElementById("weather-select").value
     let shoes;
 
-    //Processing
+    //Processing change the variable shoes depending on the weather the user picks
     if (weather == "") {
         shoes = "--Please Choose an Option--";
     }
@@ -20,7 +20,7 @@ function footware() {
         shoes = "shoes";
     }
 
-    //Output
+    //Output what shoes to wear depending on the weather the user picks
 document.getElementById("output").innerHTML = "When the weather is " + weather + " you should wear " + shoes + "."
 
 }
