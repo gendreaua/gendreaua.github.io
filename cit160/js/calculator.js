@@ -28,7 +28,7 @@ function basicCalculator() {
     }
 
     //Output the answer and if the user answered the problem correctly
-    document.getElementById("output").innerHTML = "You were " + message + ". The answer is " + answer.toFixed(2);
+    document.getElementById("output").innerHTML = "You were " + message + ". The answer is " + answer.toFixed(1);
 
 }
 
