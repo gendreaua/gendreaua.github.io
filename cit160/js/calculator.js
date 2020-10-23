@@ -7,18 +7,18 @@ function basicCalculator() {
     let answer, message;
 
     //Processing
-    if (operator == "+") {
-        answer = num1 + num2;
+    switch (operator) {
+        case "+":
+            answer = num1 + num2;
+            break;
+        case "-":
+            answer = num1 - num2;
+        case "*":
+            answer = num1 * num2;
+        case "/":
+            answer = num1 / num2;
     }
-    else if (operator == "-") {
-        answer = num1 - num2;
-    }
-    else if (operator == "*") {
-        answer = num1 * num2;
-    }
-    else if (operator == "/") {
-        answer = num1 / num2;
-    }
+    
 
     if (num3 == answer) {
         message = "Correct"
