@@ -4,19 +4,19 @@ function footware() {
     let shoes;
 
     //Processing change the variable shoes depending on the weather the user picks
-    if (weather == "") {
+    if (weather === "") {
         shoes = "--Please Choose an Option--";
     }
-    else if (weather == "hot") {
+    else if (weather === "hot") {
         shoes = "sandles";
     }
-    else if (weather == "rain") {
+    else if (weather === "rain") {
         shoes = "galoshes";
     }
-    else if (weather == "snow") {
+    else if (weather === "snow") {
         shoes = "boots";
     }
-    else if (weather == "unknown") {
+    else if (weather === "unknown") {
         shoes = "shoes";
     }
 
