@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+        <title>Exam 2-1 Amy Gendreau</title>
+    </head>
+    <body>
+        <header>
+            <!--To calculate an employees pay after taxes are removed-->
+            <h1>Employee Pay (After Tax)</h1>
+            <h2>Amy Gendreau</h2>
+        </header>
+        <main>
+            <h3>Total Number of Hours</h3>
+            <label>
+                Enter Total Regular Hours Worked: 
+                <input type="text" id="regHours">
+            </label>
+            <label>
+                Enter Total Overtime Hours Worked: 
+                <input type="text" id="otHours">
+            </label>
+            <label>
+                <button type="button" onclick="employeePay()">Calculate Pay</button>
+
+            </label>
+            <hr>
+            <p>Net Pay: <span id="output"></span>
+            </p>
+        </main>
+        <footer>
+            &copy;2020 &bull; Amy Gendreau &bull; BYU-Idaho &bull; CIT 160
+        </footer>
+        <script>
+            //input numbers entered by the user
+            function employeePay() {
+                let regHours = parseFloat(document.getElementById("regHours").value);
+                let otHours = parseFloat(document.getElementById("otHours").value);
+
+            //enter regular and overtime pay rates
+                let regWage = 15;
+                let otWage = 22.50;
+
+            //Process math equations to get Net Pay
+                let regPay = regHours * regWage;
+                let otPay = otHours * otWage;
+                let grossPay = regPay + otPay;
+                let tax = grossPay * 0.15;
+                let netPay = grossPay - tax;
+
+            //Output Net Pay  
+                document.getElementById("output").innerHTML =  "$" + netPay.toFixed(2)
+
+            }
+        </script>
+    </body>
+</html>

@@ -23,6 +23,7 @@ header {
 header img {
     width: 100px;
     height: auto;
+    
 }
 header nav ul {
     display: flex;
@@ -73,7 +74,7 @@ footer {
 .social img {
     width: 35px;
     height: auto;
-    float: center;
+    float: right;
     margin-right: 12px;
     border-radius: .5rem;
 }

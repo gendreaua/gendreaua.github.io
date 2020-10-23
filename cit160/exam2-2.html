@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+        <title>Exam 2-2 Amy Gendreau</title>
+    </head>
+    <body>
+        <header>
+            <!--To calculate the volume of a cylinder-->
+            <h1>Calculate Volume of Cylinder</h1>
+            <h2>Amy Gendreau</h2>
+        </header>
+        <main>
+            <h3>Total Number of Hours</h3>
+            <label>
+                Enter the Radius: 
+                <input type="text" id="r">
+            </label>
+            <label>
+                Enter The Height: 
+                <input type="text" id="h">
+            </label>
+            <label>
+                <button type="button" onclick="volume()">Calculate Volume</button>
+
+            </label>
+            <hr>
+            <p>Volume: <span id="output"></span>
+            </p>
+        </main>
+        <footer>
+            &copy;2020 &bull; Amy Gendreau &bull; BYU-Idaho &bull; CIT 160
+        </footer>
+        <script>
+            //input numbers entered by the user for radius and height
+            function volume() {
+                let r = parseFloat(document.getElementById("r").value);
+                let h = parseFloat(document.getElementById("h").value);
+
+            //Process equation for volume
+                let volume = Math.PI * Math.pow(r,2) * h;
+             
+
+            //Output Volume  
+                document.getElementById("output").innerHTML = volume.toFixed(1)
+
+            }
+        </script>
+    </body>
+</html>

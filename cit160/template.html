@@ -14,15 +14,15 @@
         <main>
             <h3>Add Two Numbers</h3>
             <label>
-                Enter Number One: 
-                <input type="text" id="number1">
+                a = 1, b = 3, c = -2 
+                
             </label>
             <label>
-                Enter Number Two: 
-                <input type="text" id="number2">
+                a + b * 7 % 4 - c: 
+                
             </label>
             <label>
-                <button type="button" onclick="addNumbers()">Add Numbers</button>
+                <button type="button" onclick="compute()">compute</button>
 
             </label>
             <hr>
@@ -34,7 +34,16 @@
             &copy;2020 &bull; Amy Gendreau &bull; BYU-Idaho &bull; CIT 160
         </footer>
         <script>
-            
+            function compute() {
+                //input
+                let a = 1, b = 3, c = -2;
+                
+                //processing
+                let result = a + b * 7 % 4 - c;
+                //output
+                document.getElementById("output").innerHTML = "The answer is " + result;
+
+            }
         </script>
     </body>
 </html>
