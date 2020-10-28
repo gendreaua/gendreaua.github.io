@@ -1,0 +1,24 @@
+let x = 2, y = 6, z = 5;
+let result = (x < 3 && (y < 7 ^ z != 3))
+
+x < 3 && (y < 7 ^ z != 3)
+
+T && ( T ^ T )
+
+T && F
+
+False
+
+Write a defining table and a program that asks the user to enter a month name (January, February, etc.) and then outputs the number of days in the month. For February, output "28 or 29 days".
+
+let month = "March";
+
+types of outputs 28 or 29 days, 30 days, 31 days
+
+if (month =="January" || month =="March" || month == "May" || month == "July" || month == "August" || month == "October" || month == "December"){
+    message = "31 days";
+} else if ( month = "April" || month == "June" || month == "September" || month == "November"){
+    message = "30 days";
+} else {
+    message = "28 or 29 days"
+}

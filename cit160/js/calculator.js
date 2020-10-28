@@ -9,14 +9,14 @@ function basicCalculator() {
     //Processing
     switch (operator) {
         case "+":
-            answer = num1 + num2;
+            answer = parseFloat(num1 + num2);
             break;
         case "-":
-            answer = num1 - num2;
+            answer = parseFloat(num1 - num2);
         case "*":
-            answer = num1 * num2;
+            answer = parseFloat(num1 * num2);
         case "/":
-            answer = num1 / num2;
+            answer = parseFloat(num1 / num2);
     }
     
 
@@ -28,7 +28,7 @@ function basicCalculator() {
     }
 
     //Output the answer and if the user answered the problem correctly
-    document.getElementById("output").innerHTML = "You were " + message + ". The answer is " + answer.toFixed(1);
+    document.getElementById("output").innerHTML = "You were " + message + ". The answer is " + answer.toFixed();
 
 }
 
