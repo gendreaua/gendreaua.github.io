@@ -16,4 +16,5 @@ function sales() {
     //Output
     
         document.getElementById('output').innerHTML = "You Owe: $" + (discount + (discount * .06)).toFixed(2)
-    }
+}
+    
