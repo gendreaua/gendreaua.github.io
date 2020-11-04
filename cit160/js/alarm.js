@@ -9,21 +9,10 @@ function alarm() {
 
 // Processing
 
-    if (month == 0 && dayOfMonth == 1) {
+    if ((month == 0 && dayOfMonth == 1) || (month == 6 && dayOfMonth == 4) || (month == 12 && dayOfMonth == 25) || (dayOfWeek === 0) || (dayOfWeek === 6)) {
         message = "Sleep In";
 }
-    else if (month == 6 && dayOfMonth == 4) {
-        message = "Sleep In!";
-} 
-    else if (month == 12 && dayOfMonth == 25) {
-    message = "Sleep In!";
-}
-    else if (dayOfWeek === 0) {
-        message = "Sleep In!";
-}
-    else if (dayOfWeek === 6) {
-    message = "Sleep In!";
-}
+
     else {
     message = "Get Up!";
 }
