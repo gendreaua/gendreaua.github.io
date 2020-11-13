@@ -18,7 +18,7 @@ function romanNumerals() {
         digit1 = "MMM";
     }
     else {
-        digit1 = "The first number is not valid. Try Again.<br>";
+        digit1 = "<br>The first number is not valid. Try Again.<br>";
     }
     if (digit2 == 0) {
         digit2 = "";
@@ -51,7 +51,7 @@ function romanNumerals() {
         digit2 = "CM";
     }
     else {
-        digit2 = "The second number is not valid. Try Again.<br>";
+        digit2 = "<br>The second number is not valid. Try Again.<br>";
     }
     if (digit3 == 0) {
         digit3 = "";
@@ -84,7 +84,7 @@ function romanNumerals() {
         digit3 = "XC";
     }
     else {
-        digit3 = "The third number is not valid. Try Again.<br>";
+        digit3 = "<br>The third number is not valid. Try Again.<br>";
     }
     if (digit4 == 0) {
         digit4 = "";
@@ -117,7 +117,7 @@ function romanNumerals() {
         digit4 = "IX";
     }
     else {
-        digit4 = "The fourth number is not valid. Try Again.<br>";
+        digit4 = "<br>The fourth number is not valid. Try Again.<br>";
     }
     //Output
     document.getElementById('output').innerHTML = digit1 + digit2 + digit3 + digit4;
