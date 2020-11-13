@@ -18,7 +18,7 @@ function romanNumerals() {
         digit1 = "MMM";
     }
     else {
-        digit1 = "The firts number is not valid. Try Again.<br>";
+        digit1 = "The first number is not valid. Try Again.<br>";
     }
     if (digit2 == 0) {
         digit2 = "";
@@ -117,7 +117,7 @@ function romanNumerals() {
         digit4 = "IX";
     }
     else {
-        digit2 = "The fourth number is not valid. Try Again.<br>";
+        digit4 = "The fourth number is not valid. Try Again.<br>";
     }
     //Output
     document.getElementById('output').innerHTML = digit1 + digit2 + digit3 + digit4;
