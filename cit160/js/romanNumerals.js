@@ -5,7 +5,10 @@ function romanNumerals() {
     let digit3 = parseInt(document.getElementById("digit3").value);
     let digit4 = parseInt(document.getElementById("digit4").value);
     //Processing to convert each number into its roman numeral
-    if (digit1 == 1) {
+    if (digit1 == 0) {
+        digit1 = "";
+    }
+    else if (digit1 == 1) {
         digit1 = "M";
     }
     else if (digit1 == 2) {
@@ -15,9 +18,12 @@ function romanNumerals() {
         digit1 = "MMM";
     }
     else {
-        digit1 = "The firts number is not valid. Try Again.<br>"
+        digit1 = "The firts number is not valid. Try Again.<br>";
     }
-    if (digit2 == 1) {
+    if (digit2 == 0) {
+        digit2 = "";
+    }
+    else if (digit2 == 1) {
         digit2 = "C";
     }
     else if (digit2 == 2) {
@@ -45,9 +51,12 @@ function romanNumerals() {
         digit2 = "CM";
     }
     else {
-        digit2 = "The second number is not valid. Try Again.<br>"
+        digit2 = "The second number is not valid. Try Again.<br>";
     }
-    if (digit3 == 1) {
+    if (digit3 == 0) {
+        digit3 = "";
+    }
+    else if (digit3 == 1) {
         digit3 = "X";
     }
     else if (digit3 == 2) {
@@ -75,9 +84,12 @@ function romanNumerals() {
         digit3 = "XC";
     }
     else {
-        digit3 = "The third number is not valid. Try Again.<br>"
+        digit3 = "The third number is not valid. Try Again.<br>";
     }
-    if (digit4 == 1) {
+    if (digit4 == 0) {
+        digit4 = "";
+    }
+    else if (digit4 == 1) {
         digit4 = "I";
     }
     else if (digit4 == 2) {
@@ -105,7 +117,7 @@ function romanNumerals() {
         digit4 = "IX";
     }
     else {
-        digit2 = "The fourth number is not valid. Try Again.<br>"
+        digit2 = "The fourth number is not valid. Try Again.<br>";
     }
     //Output
     document.getElementById('output').innerHTML = digit1 + digit2 + digit3 + digit4;
