@@ -6,7 +6,7 @@ function sumOdds() {
         let count;
 
     // Processing   
-        for (let i = 1; i < userNumber; i++) {
+        for (let i = 1; i <= userNumber; i++) {
             if (i % 2 != 0) {
                 sum += i;
             }
