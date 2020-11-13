@@ -110,7 +110,7 @@ function romanNumerals() {
     else if (digit4 == 7) {
         digit4 = "VII";
     }
-    else if (digit5 == 8) {
+    else if (digit4 == 8) {
         digit5 = "VIII";
     }
     else if (digit4 == 9) {
