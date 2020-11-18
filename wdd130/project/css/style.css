@@ -25,9 +25,10 @@ header img {
     height: auto;    
 }
 
-.hero, .img1, .img2 {
-    padding-top: 30px;
+.img1, .img2 {
+    padding: 15px;
     box-shadow: 20px;
+    border-radius: 1.5rem;
 }
 
 header nav ul {
@@ -166,5 +167,6 @@ footer {
 
 .logo {
     padding: 10px;
+    box-shadow: 30px;
 }
 
