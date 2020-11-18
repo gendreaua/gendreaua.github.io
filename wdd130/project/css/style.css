@@ -25,10 +25,9 @@ header img {
     height: auto;    
 }
 
-img {
+.hero, .img1, .img2 {
     padding-top: 30px;
-    border-radius: 1.5rem;
-    box-shadow: 0 0 30px;
+    box-shadow: 20px;
 }
 
 header nav ul {
@@ -160,3 +159,12 @@ footer {
 .copyright {
     text-align: center;
 }
+
+.container2, .container3 {
+    text-align: center;
+}
+
+.logo {
+    padding: 10px;
+}
+
