@@ -8,7 +8,7 @@ function doInputOutput() {
             w = windChill(tempF, windspeed).toFixed(2) + "&deg" + " Fahrenheit";
         }
         else if (tempF > 50) {
-            w = "The temperature must be above 50 &deg Fahrenheit to calculate wind chill."
+            w = "The temperature must be below 50 &deg Fahrenheit to calculate wind chill."
         }
         else {
             w = "The windspeed must be above 3 miles per hour to calculate wind chill."
