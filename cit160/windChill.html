@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=devic-width, initial-scale=1.0">
         <title>CIT 160 Sum Odds - Amy Gendreau</title>
-        <link rel="stylesheet" href="css/calculator.css">
+        <link rel="stylesheet" href="css/windChill.css">
     </head>
     <body>
         <header>
@@ -14,14 +14,14 @@
         <main>
             <h3>Lets Calculate the Wind Chill: </h3>
 
-            <label>Temperature: <input type="text" id="temperature" ></label>
+            <label>Temperature: <input type="text" id="temperature"> (in Fahrenheit)</label><br>
 
-            <label>Wind Speed: <input type="text" id="windSpeed" ></label><br>
+            <label>Wind Speed: <input type="text" id="windspeed"> (miles per hour)</label><br>
  
             <label><button type="button" onclick="doInputOutput()">Wind Chill</button></label>      
             <hr>
             <p>
-                <span id="output"></span>
+                <span id="output" class="size"></span>
             </p>
             <script src="js/windChill.js"></script>
         </main>
