@@ -13,28 +13,51 @@
 
 <body>
     <header>
-        <div class=logo><img src="images/templeinn-logo-bkgrmv.png" alt="Temple Inn Logo"></div>
+        <img src="images/templeinn-logo-bkgrmv.png" alt="Temple Inn Logo">
         <h1>Temple Inn & Suites</h1>
         <nav>
             <ul>
                 <li><a href="index.html"><strong>Home</strong></a></li>
                 <li><a href="amenities.html"><strong>Amenities</strong></a></li>
                 <li><a href="mytemple.html"><strong>Temple Spotlight</strong></a></li>
-                <li><a href="reservations.html"><strong>Reservations</strong></a></li>
+                <li><a href="#"><strong>Reservations</strong></a></li>
             </ul>
         </nav>
-        
     </header>
     <main>
         <div class="hero">
-        <img src="images/temple-hero-img.jpg" alt="Image of a Temple on a hill">
-        <div id="action" class="action">
-            <h4>Any Questions?</h4>
-                <button type="button" onclick="contactUs()">Contact Us</button>
-        </div>
-        </div>
-
-
+            <img src="images/temple-hero-img.jpg" alt="Image of a Temple on a hill">
+            <div id="action" class="action">
+                <h4>Any Questions?</h4>
+                    <button type="button" onclick="contactUs()">Contact Us</button>
+            </div>
+            </div>
+            <div id=messageBox ><form action="/my-handling-form-page" method="post">
+                
+                        <label for="destination"><strong> Destination: </strong></label>
+                        <input type="text" id="destination" name="user_destination"><br><br>
+                  
+                        <label for="arrival"><strong>Arrival: </strong></label>
+                        <input type="date" id="arrival" name="user_arrival">
+                    
+                        <label for="departure"><strong>Departure: </strong></label>
+                        <input type="date" id="departure" name="user_departure"><br><br>
+                 
+                   <label for="rooms"><strong>Rooms:</strong></label>
+                   <input class="num" type="number" id="rooms" name="user_rooms">
+                 
+                 
+                    <label for="adults"><strong>Adults: </strong></label>
+                    <input class="num" type="number" id="adults" name="user_adults">
+                  
+                
+                    <label for="children"><strong>Children: </strong></label>
+                    <input class="num" type="number" id="children" name="user_children"><br><br>
+                  
+                 
+                    <button class="search" type="submit"><strong>Search</strong></button>
+                  
+               </form></div>
     </main>
     <footer>
         <div class="contact">
