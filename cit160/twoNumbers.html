@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+        <title>CIT 160 Exam 2-2 - Amy Gendreau</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Exam 2-2: True or Falses</h1>
+            <h2>Amy Gendreau</h2>
+        </header>
+        <main>
+            <h3>Input 2 numbers</h3>
+            <h4>True = both numbers are greater than 5 or their sum is greater than 20</h4>
+            <p>Please enter two numbers:</p>
+                <input type="text" id="one" size="5">
+                <input type="text" id="two" size="5">          
+                <button type="button" onclick="twoNumbers()">Click</button>
+                <div id="output"></div>
+        </main>
+        <footer>
+            &copy;2020 &bull; Amy Gendreau &bull; BYU-Idaho &bull; CIT 160
+        </footer>
+        <script>
+            function twoNumbers() {
+                //Input numbers given by the user
+                let one = parseInt(document.getElementById("one").value);
+                let two = parseInt(document.getElementById("two").value);
+                let message = "";
+                //Processing to calculate if both numbers are greater than 5 and if their sum is greater than 20
+                if ((one > 5 && two > 5) || (one + two) > 20 ) {
+                    message = "True"
+                }
+                else {
+                    message = "False"
+                }
+
+                //Output either True or False
+                document.getElementById("output").innerHTML =  message;
+            }
+        </script>
+    </body>
+</html>
