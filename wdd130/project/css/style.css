@@ -272,6 +272,10 @@ form {
     width: 20%;
 }
 
+#messageBox {
+    text-align: center;
+}
+
 label {
     padding: 10px;
 }
