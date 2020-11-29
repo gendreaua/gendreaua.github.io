@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
 :root {
-    --primary-color: #885a89;
-    --secondary-color: #546a76;
-    --accent1-color: #dbc2cf;
-    --accent2-color: #88a0a8;
+    --primary-color: #184D1E;
+    --secondary-color: #0E0F19;
+    --accent1-color: #C1C1C1;
+    --accent2-color: #7765E3;
     --heading-font: 'paprika';
     --paragraph-font: 'hind siliguri', 'Helvetica', 'sans-serif'
 }
 
 html {
-    background-color: var(--accent2-color);
+    background-color: var(--primary-color);
 }
 
 body {
     max-width: 900px;
     margin: 0 auto;
-    background-color: white;
+    background-color: var(--accent1-color);
     padding: 1em
 }
 
@@ -37,12 +37,12 @@ h6 {
 header {
     padding: 1em;
     text-align: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     background-color: var(--accent1-color);
 }
 
 header>h1 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 p {
@@ -84,7 +84,7 @@ p {
 }
 
 nav {
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
@@ -102,7 +102,7 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav a:hover {
