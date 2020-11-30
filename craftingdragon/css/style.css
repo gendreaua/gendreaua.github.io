@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+    --primary-color: #184D1E;
+    --secondary-color: #314172;
+    --accent1-color: #70C291;
+    --accent2-color: #BDC3DB;
+    --heading-font: 'paprika';
+    --paragraph-font: 'hind siliguri', 'Helvetica', 'sans-serif'
+}
+
+html {
+    background-color: var(--primary-color);
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--accent2-color);
+    padding: 1em;
+}
+
+img {
+    max-width: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+header {
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+    max-width: 900px;
+    padding: 1em;
+}
+
+header>h1 {
+    color: var(--primary-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center
+}
+
+.colors th {
+    background-color: #999;
+    border: 1px solid black;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+    border: 1px solid black;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+nav {
+    background-color: var(--accent1-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 900px;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--secondary-color);
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+}
