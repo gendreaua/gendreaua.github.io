@@ -3,16 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=devic-width, initial-scale=1.0">
-        <title>CIT 160 Template - Amy Gendreau</title>
+        <title>Exam 2-2 - Amy Gendreau</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-            <h1>Template</h1>
+            <h1>Powers</h1>
             <h2>Amy Gendreau</h2>
         </header>
         <main>
-            <h3>What will the computer say</h3>
+            <h3>The Powers of 2</h3>
+            <h4>(up to 31)</h4>
             
             
             <label>
@@ -30,13 +31,20 @@
         <script>
             function compute() {
                 //input
-                let x = 2, y = 6, z = 5;
-                let result = (x == 2 ^ y > 5);
-                
+                let i = 0
+                let power = "";
                 //processing
+                while (i < 31) {
+                    power += 2 ** i + ", ";
+                    i++;
+                } 
+                if (i == 31) {
+                    power += 2**i;
+                }
+                
               
                 //output
-                document.getElementById("output").innerHTML = result;
+                document.getElementById("output").innerHTML = power;
 
             }
         </script>

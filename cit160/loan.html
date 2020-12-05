@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+        <title>CIT 160 Loan Calculator - Amy Gendreau</title>
+        <link rel="stylesheet" href="css/loan.css">
+    </head>
+    <body>
+        <header>
+            <h1>Week 11: Loan Calculator </h1>
+            <h2>Amy Gendreau</h2>
+        </header>
+        <main>
+            <h3>Loan Calculator </h3><br>
+            <form>
+            <div class="gridCalc">
+            <label class="words">Amount borrowed (principal)</label> <input type="text" id="principal" class="box"><br>
+
+            <label class="words">Annual interest rate (example: .065)</label> <input type="text" id="annualRate" class="box"><br>
+
+            <label class="words">Number of years</label> <input type="text" id="years" class="box"><br>
+
+            <label class="words">Payments per year</label> <input type="text" id="periodsPerYear" class="box"><br>
+            
+ 
+            <label class="words"><button type="button" onclick="doPayment()">Compute Payment</button></label><input type="text" id="payment" readonly><br>
+
+            <label class="words">Number of payments paid to date</label> <input type="text" id="numberOfPaymentsPaidToDate" class="box"><br>
+
+            <label class="words"><button type="button" onclick="doBalance()">Compute payoff amount</button></label><input type="text" id="balance" readonly>
+            </div>
+            <input type="reset" class="reset" value="Reset">
+            </form>
+            <hr>
+
+            <script src="js/loan.js"></script>
+        </main>
+        <footer>
+            &copy;2020 &bull; Amy Gendreau &bull; BYU-Idaho &bull; CIT 160
+        </footer>
+        
+    </body>
+</html>

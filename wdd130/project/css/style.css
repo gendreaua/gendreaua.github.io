@@ -73,8 +73,8 @@ nav li {
 }
 
 a:hover {
-    background-color: #885a89;
-    color: white;
+    background-color: #A0B4BA;
+    color: #634063;
 }
 
 footer {
@@ -89,20 +89,27 @@ button {
     background-color: #885a89;
     font-size: 20px;
     opacity: 0.9;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+
+.hero {
+    position: relative;
 }
 
 .hero img {
     padding-top: 10px;
     border-radius: 1.5rem;
-    position: relative;
 }
     
 .action {
     position: absolute;
-    top: 120px;
-    left: 200px;
+    top: 15px;
+    left: 10px;
     border: 1px solid #885a89;
+    border-radius: 1em;
     background: radial-gradient(#dbc2cf, #885a89);
+    box-shadow: 20px black;
 }
 
 .contact {

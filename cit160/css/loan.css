@@ -1,0 +1,95 @@
+body {
+	background-color: slategray;
+}
+
+header,
+footer {
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+footer {
+	font-size: 13px;
+	letter-spacing: 1.5pt;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+h2, #currentdate {
+	color: yellow;
+}
+
+main {
+	margin: 10px auto;
+	border: 1px solid #999;
+	padding: 20px;
+	max-width: 600px;
+	background-color: #F0EAD6;
+	box-shadow: 0 0 30px;
+}
+
+h3 {
+	font-size: 40px;
+	margin: 10px 0 5px 0;
+	padding: 0;
+	text-align: center;
+	text-decoration: underline;
+}
+
+ul {
+	font-size: 25px;
+}
+
+li {
+	padding: 10px;
+}
+
+.gridCalc {
+	display: grid;
+	grid-template-columns: 80% 20%;
+	grid-template-rows: auto;
+}
+
+label {
+	font-size: 30px;
+	text-align: left;
+}
+
+input, select {
+    font-size: 20px;
+    padding: .5rem;
+}
+
+button {
+	background-color: lightgrey;
+	font-size: 20px;
+	padding: .5rem;
+}
+
+.reset {
+	background-color: lightgrey;
+	font-size: 20px;
+	padding: .5rem;
+	margin-top: 15px;
+}
+
+.size {
+	font-size: 30px;
+}
+
+.words {
+	grid-column: 1/2;
+}
+
+.box {
+	grid-column: 2/3;
+}
+
+.style {
+	font-size: 38px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+        <title>CIT 160 Investment Calculator - Amy Gendreau</title>
+        <link rel="stylesheet" href="css/invest.css">
+    </head>
+    <body>
+        <header>
+            <h1>Week 11: Investment Calculator </h1>
+            <h2>Amy Gendreau</h2>
+        </header>
+        <main>
+            <h3>Investment Calculator </h3><br>
+            <form>
+            <div class="gridCalc">
+            <label class="words">Amount invested (principal)</label> <input type="text" id="principal" class="box"><br>
+
+            <label class="words">Annual rate (example: .08)</label> <input type="text" id="annualRate" class="box"><br>
+
+            <label class="words">Number of years</label> <input type="text" id="years" class="box"><br>
+
+            <label class="words">Periods per year</label> <input type="text" id="periodsYear" class="box"><br>
+            
+ 
+            <label class="words"><button type="button" onclick="doFV()">Compute future value</button></label> <input type="text" id="output" readonly>
+            </div>
+            <input type="reset" class="reset" value="Reset">
+            </form>
+            <hr>
+            <p>
+                <span id="output" class="style"></span>
+            </p>
+            <script src="js/invest.js"></script>
+        </main>
+        <footer>
+            &copy;2020 &bull; Amy Gendreau &bull; BYU-Idaho &bull; CIT 160
+        </footer>
+        
+    </body>
+</html>

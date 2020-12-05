@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+        <title>CIT 160 Exam 2-2 - Amy Gendreau</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Exam 2-2: Three Integers</h1>
+            <h2>Amy Gendreau</h2>
+        </header>
+        <main>
+            <h3>Input Three Numbers</h3>
+            <h4>A start number, end number, and divisor number</h4>
+            <h5>I will compute all numbers within that range that can be evenly divided by the divisor</h5>
+            <Label>Start Number:
+                <input type="text" id="one" size="5"></Label>
+            <Label>End Number:
+                <input type="text" id="two" size="5"> </Label>
+            <Label>Divisor Number:
+                    <input type="text" id="three" size="5"> </Label>             
+                <button type="button" onclick="threeIntegers()">Compute</button>
+                <div id="output"></div>
+        </main>
+        <footer>
+            &copy;2020 &bull; Amy Gendreau &bull; BYU-Idaho &bull; CIT 160
+        </footer>
+        <script>
+            function threeIntegers() {
+                //Input numbers given by the user
+                let start = parseInt(document.getElementById("one").value);
+                let end = parseInt(document.getElementById("two").value);
+                let divisor = parseInt(document.getElementById("three").value);
+                let answer = "";
+                //Processing to calculate the numbers evenly divisable by divisor
+                for (let i = start; i <= end; i++) {
+                    if (i % divisor == 0) {
+                        answer += i + " ";
+                    }
+                }
+                //Output either True or False
+                document.getElementById("output").innerHTML =  answer;
+            }
+        </script>
+    </body>
+</html>
