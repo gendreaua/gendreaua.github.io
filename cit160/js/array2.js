@@ -16,7 +16,7 @@ function test() {
     let mult2 = multiply(list2, 4);
 
     // Build a string to display to the user.
-    let output = '<br>' + "How many even numbers in list 1? " +
+    let output = '<br>' + "How many even numbers in list 1? " + 
             count1 + '<br>' + '<br>' + "How many even numbers in list 2? " +
             count2 + '<br>' + '<br>' + "Multiply each number in list 1 by 3: " +
             mult1 + '<br>' + '<br>' + "Multiply each number in list 2 by 4: " +
