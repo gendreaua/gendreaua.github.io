@@ -38,7 +38,7 @@ function getMiddle(list) {
         mid = (list[list.length / 2] + list[list.length / 2 - 1]) / 2;
     }
     else {
-        mid = list[Math.floor((list.length - 1) / 2)];
+        mid >>>= list[((list.length - 1) / 2)];
     }
     return mid;
 }
