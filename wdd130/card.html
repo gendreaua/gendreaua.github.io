@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amy Gendreau | WDD 130 Media Card</title>
+  <style>
+    img {
+      max-width: 100%;
+    }
+    .card {
+      max-width: 320px;
+      background-color: white;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    img {
+      overflow: hidden;
+      border-radius: 4px 4px 0 0;
+      box-shadow: 1px 1px 4px 1px #888;
+    }
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 320px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    div {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    button {
+      margin: 0 auto;
+      width: 15%;
+      float: left;
+      font-size: 15px;
+      padding: 5px;
+    }
+    .copy {
+      margin: 0 auto;
+      text-align: center;
+      max-width: 900px;
+      padding: 15px;
+    }
+    .time {
+      margin-left: auto;
+      float: right;
+    }
+    .viewButton {
+      border-radius: 4px 0 0 4px;
+    }
+    .editButton {
+      border-radius: 0 4px 4px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <article class="card">
+  <img src="https://picsum.photos/320/240" alt="Random Image for Assignment">
+  </article>
+  <p>This is a wider card with supporting text below as a natural lead-in to additional content. 
+    This content is a little bit longer.</p>
+
+  <footer>
+    <div><button type="button" class="viewButton" onclick="viewButton()">View</button>
+    <button type="button" class="editButton" onclick="editButton()">Edit</button>
+    <span class="time" id="time"></span></div>
+  </footer>
+  <script>
+    let time = new Date().toTimeString().slice(0,5);
+      
+    document.getElementById('time').innerHTML = time
+  </script>
+</body>
+
+
+  <br><br><div class="copy">&copy;2020 | Amy Gendreau | California| <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
+    Learning</a></div>
+
+
+</html>
