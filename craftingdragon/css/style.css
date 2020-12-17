@@ -20,10 +20,6 @@ body {
     padding: 15px;
 }
 
-img {
-    max-width: 200px;
-}
-
 h1 {
     font-size: 90px;
     padding: 10px;
@@ -175,6 +171,10 @@ nav a {
     justify-content: center;
 }
 
+.container img {
+    max-width: 200px;
+}
+
 .welcome {
     grid-column: 3;
     grid-row: 1;
@@ -184,7 +184,10 @@ nav a {
 .spoon-nativity {
     grid-column: 2;
     grid-row: 2;
+}
 
+.spoon-nativity img {
+    max-width: 200px;
 }
 
 .words {
@@ -208,6 +211,10 @@ nav a {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border-radius: 60px;
     padding: 15px;
+}
+
+.container2 img {
+    max-width: 200px;
 }
 
 .container2 img {
@@ -276,6 +283,7 @@ nav a {
     border-radius: 90px;
     padding: 15px;
     margin-left: 30px;
+    max-width: 200px;
 }
 
 .container3 p {
@@ -323,6 +331,10 @@ nav a {
     margin: 20px;
     justify-items: center;
     align-items: center;
+}
+
+.container4 img {
+    max-width: 200px;
 }
 
 .container4 p {
@@ -406,4 +418,22 @@ nav a {
 
 .copyright a {
     text-decoration: none;
+}
+
+.crochet-img {
+    max-width: 900px;
+}
+
+.bag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.pyro-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
