@@ -522,3 +522,10 @@ nav a {
     width: 300px;
     font-size: 22px;
 }
+
+.social a {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: auto;
+    width: 20%;
+}
