@@ -24,27 +24,28 @@ img {
     max-width: 200px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--heading-font);
-    color: var(--secondary-color);
-}
-
 h1 {
     font-size: 90px;
     padding: 10px;
     border-bottom: 3px dotted var(--primary-color);
     border-top: 3px dotted var(--primary-color);
+    color: var(--secondary-color);
 }
 
-h2, h3 {
+h2, h3, h4 {
     font-size: 30px;
     font-family: var(--paragraph-font);
     text-align: center;
+    color: var(--secondary-color);
+}
+
+h5 {
+    font-size: 40px;
+    font-family: var(--heading-font);
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    color: var(--secondary-color);
 }
 
 header {
@@ -194,7 +195,7 @@ nav a {
     font-size: 22px;
 }
 
-.giants-blanket {
+.fire-dragon {
     grid-column: 4;
     grid-row: 2;
     width: 300px;
@@ -310,4 +311,99 @@ nav a {
     grid-column: 3;
     grid-row: 2;
     padding: 10px;
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: 1fr 300px 300px 1fr;
+    grid-gap: 5px;
+    padding: 15px;
+    background-color: var(--accent1-color);
+    border-radius: 60px;
+    margin: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.container4 p {
+    font-size: 22px;
+}
+
+.cow {
+    grid-column: 2;
+    border-radius: 60px;
+}
+
+.wip {
+    grid-column: 3;
+}
+
+.card-img {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 1px 1px 4px 1px var(--primary-color);
+    padding: 10px;
+  }
+.card {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.card-p {
+    font-family: var(--paragraph-font);
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.contact-box {
+    border: 2px dotted var(--primary-color);
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.buttons {
+    max-width: 320px;
+    margin: 0 auto;
+}
+.buttons button {
+    margin: 0 auto;
+    width: 30%;
+    font-size: 15px;
+    padding: 5px;
+    background-color: var(--accent1-color);
+}
+
+.copy {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 900px;
+    padding: 15px;
+}
+.time {
+    margin-left: auto;
+    float: right;
+}
+.contact {
+    border-radius: 8px 8px 8px 8px;
+}
+
+.sponsor {
+    font-size: 24px;
+    color: var(--secondary-color);
+    border: 8px double var(--primary-color);
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
 }
