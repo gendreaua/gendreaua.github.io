@@ -529,3 +529,9 @@ nav a {
     margin-right: auto;
     width: 20%;
 }
+
+@media screen and (max-width: 550px) {
+    body {
+      display: block;
+    }
+  }
